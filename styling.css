@@ -1,0 +1,89 @@
+.game {
+  /* Width and height of the game container */
+  width: 600px;
+  height: 200px;
+  /* Border around the game container */
+  border: 1px solid black;
+  /* Center the game container horizontally */
+  margin: auto;
+}
+
+#dino {
+  /* Width and height of the dinosaur character */
+  width: 50px;
+  height: 50px;
+  /* Background image of the dinosaur */
+  background-image: url(Img/trex.png);
+  /* Size of the background image */
+  background-size: 50px 50px;
+  /* Position the dinosaur relative to its container */
+  position: relative;
+  /* Margin on the left side of the dinosaur */
+  margin-left: 10px;
+  /* Initial vertical position of the dinosaur */
+  top: 150px;
+}
+
+.jump {
+  /* Animation property for the jump animation */
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  /* Keyframes for the jump animation */
+  0% {
+    /* Starting position of the jump animation */
+    top: 150px;
+  }
+
+  30% {
+    /* Mid-air position of the jump animation */
+    top: 130px;
+  }
+
+  50% {
+    /* Highest point of the jump animation */
+    top: 80px;
+  }
+
+  80% {
+    /* Falling position of the jump animation */
+    top: 130px;
+  }
+
+  100% {
+    /* Ending position of the jump animation */
+    top: 150px;
+  }
+}
+
+#cactus {
+  /* Width and height of the cactus obstacle */
+  width: 20px;
+  height: 40px;
+  /* Position the cactus relative to its container */
+  position: relative;
+  /* Vertical position of the cactus */
+  top: 110px;
+  /* Horizontal position of the cactus */
+  left: 500px;
+  /* Background image of the cactus */
+  background-image: url("Img/cactus.png");
+  /* Size of the background image */
+  background-size: 20px 40px;
+  /* Animation property for the cactus animation */
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  /* Keyframes for the cactus animation */
+  0% {
+    /* Starting position of the cactus animation */
+    left: 580px;
+  }
+
+  100% {
+    /* Ending position of the cactus animation */
+    left: -20px;
+  }
+}
